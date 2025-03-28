@@ -34,8 +34,8 @@ python setup.py install
 
 ## TODO
 
-- Code Cleaning
-- Workflow Instruction
+- [x] Code of See
+- [ ] Instruction
 
 ## Citation
 
