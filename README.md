@@ -11,6 +11,32 @@ We focus on the task of unknown object rearrangement, where a robot is supposed 
 
 Any question, please let me know: kcxu@zju.edu.cn
 
+## Setup
+###  Installation
+
+```
+git clone git@github.com:xukechun/GSP.git
+cd GSP
+
+conda create -n gsp python=3.8
+conda activate gsp
+
+pip install -r requirements.txt
+
+python setup.py develop
+
+cd models/graspnet/pointnet2
+python setup.py install
+
+cd ../knn
+python setup.py install
+```
+
+## TODO
+
+- Code Cleaning
+- Workflow Instruction
+
 ## Citation
 
 If you find this work useful, please consider citing:
@@ -18,8 +44,9 @@ If you find this work useful, please consider citing:
 ```
 @article{xu2024grasp,
   title={Grasp, See and Place: Efficient Unknown Object Rearrangement with Policy Structure Prior},
-  author={Xu, Kechun and Zhou, Zhongxiang and Wu, Jun and Lu, Haojian and Wang, Yue and Xiong, Rong},
-  journal={arXiv preprint arXiv:2402.15402},
-  year={2024}
+  author={Xu, Kechun and Zhou, Zhongxiang and Wu, Jun and Lu, Haojian and Xiong, Rong and Wang, Yue},
+  journal={IEEE Transactions on Robotics},
+  year={2024},
+  publisher={IEEE}
 }
 ```
